@@ -22,15 +22,14 @@
 
         main {
             display: flex;
+            flex-direction: row-reverse;
         }
 
         .articles {
-            flex-direction: column;
             flex: 5;
         }
 
         .side-bar {
-            flex-direction: column;
             flex: 1;
         }
 
@@ -53,20 +52,9 @@
 </head>
 <body>
     <header>
-        <h1>Flexbox Box Examples</h1>
+        <h1>Flexbox Examples</h1>
     </header>
     <main>
-        <aside class="side-bar">
-            <nav>
-                <ul>
-                    <li>Side bar</li>
-                    <li>Side bar</li>
-                    <li>Side bar</li>
-                    <li>Side bar</li>
-                    <li>Side bar</li>
-                </ul>
-            </nav>
-        </aside>
         <section class="articles">
             <article>
                 <h2>Lorem 1</h2>
@@ -81,6 +69,17 @@
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius reprehenderit temporibus tempore quisquam a ex dignissimos mollitia in nobis optio deserunt itaque cumque voluptatum nulla ipsa maxime quae, voluptates atque.
             </article>
         </section>
+        <aside class="side-bar">
+            <nav>
+                <ul>
+                    <li>Side bar</li>
+                    <li>Side bar</li>
+                    <li>Side bar</li>
+                    <li>Side bar</li>
+                    <li>Side bar</li>
+                </ul>
+            </nav>
+        </aside>
     </main>
     <footer>
         <p>
