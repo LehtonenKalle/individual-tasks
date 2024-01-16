@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        header, footer {
+            text-align: center;
+            background-color: crimson;
+            color: white;
+            padding: 20px;
+        }
+        
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            display: flex;
+        }
+
+        .articles {
+            flex-direction: column;
+            flex: 5;
+        }
+
+        .side-bar {
+            flex-direction: column;
+            flex: 1;
+        }
+
+        article {
+            padding: 20px;
+            margin: 10px;
+            background-color: #c3c7c8;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            font-weight: bolder;
+            padding-top: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Flexbox Box Examples</h1>
+    </header>
+    <main>
+        <aside class="side-bar">
+            <nav>
+                <ul>
+                    <li>Side bar</li>
+                    <li>Side bar</li>
+                    <li>Side bar</li>
+                    <li>Side bar</li>
+                    <li>Side bar</li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="articles">
+            <article>
+                <h2>Lorem 1</h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto exercitationem dignissimos nam id, rerum eum sed, qui illum voluptas esse ab ut sequi similique aspernatur illo veritatis nulla, deserunt eligendi.
+            </article>
+            <article>
+                <h2>Lorem 2</h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eius perferendis, hic quaerat, iusto distinctio sapiente aliquid quia cum nihil animi laborum, ratione deserunt facilis voluptatum? Provident nesciunt consequatur pariatur.
+            </article>
+            <article>
+                <h2>Lorem 3</h2>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius reprehenderit temporibus tempore quisquam a ex dignissimos mollitia in nobis optio deserunt itaque cumque voluptatum nulla ipsa maxime quae, voluptates atque.
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Learning Flex @ 2022
+        </p>
+    </footer>   
+</body>
+</html>
